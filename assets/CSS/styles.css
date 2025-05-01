@@ -2,37 +2,5 @@
     margin:0;
     padding:10;
     box-sizing: border-box;
-}
-.imagen-con-texto {
-    position: relative;
-    display: inline-block;
-    
-}
-  
-.texto-imagen {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 10px;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    
-}
-.zeus_vista1{
-    display: flex;
-    justify-content: center;
-    width: 400px;
-    height: 400px;
-}  
-.imagen-con-texto:hover .texto-imagen {
-    opacity: 1;
-}
-.caja2_vista1{
-
-
 
 }
