@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body class="bg-dark text-light">
-    <header class="bg-dark">
+    <header class="bg-dark border-bottom border-danger">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -38,7 +38,7 @@
     </header>
     
     <main>
-      <section>
+      <section><!--Seccion del main y donde va el carousel-->
         <h1 class="p-3 text-center ">Acá encontrarás información sobre algunos de los dioses griegos más populares</h1>
         <div id="carouselDioses" class="carousel slide">
           <div class="carousel-indicators">
@@ -48,7 +48,7 @@
           </div>
           <div class="row">
 
-            <div class="col-1">
+            <div class="col-1"><!--Columna de ayuda para que el carousel quede centrado-->
             </div>
 
             <div class="col-10">
@@ -88,17 +88,40 @@
               </button>
             </div>
 
-            <div class="col-1">
+            <div class="col-1"><!--Columna de ayuda para que el carousel quede centrado-->
             </div>
+
             </div>
 
           </div>
-         
+      </section>
+
+      <section class="d-flex justify-content-around mt-5 mb-5  text-center col-sm-1"><!--Seccion de las cartas con los datos de los desarrolladores-->
+        <article class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </article>
+
+        <article class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </article>
+
+        <article class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </article>
       </section>
     </main>
 
     <footer>
-      <div class="container border-bottom border-top border-danger mb-4 p-3 mt-4 col-lg-3 col-md-12 col-xl-12">
+      <div class="container text-center border-bottom border-top border-danger mb-4 p-3 mt-4 col-lg-12  col-sm-12 col-xsm-12 col-md-12 col-xl-12">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto dolores cum nesciunt fugit incidunt autem nobis ea, alias fugiat ut ipsa debitis neque, id nam, illum quos accusantium. Distinctio, molestiae.</p>
       </div>
     </footer>
