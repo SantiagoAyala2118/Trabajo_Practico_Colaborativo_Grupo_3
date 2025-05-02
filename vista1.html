@@ -16,44 +16,41 @@
   </head>
   <body class="body_visual1">
     <header>
-      <nav
-        class="navbar navbar-expand-lg bg-body-tertiary"
-        class="navbar bg-dark border-bottom border-body"
-        data-bs-theme="dark"
-      >
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <a class="navbar-brand" href="index.html">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="vista1.html">Poseidón</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="vista2.html">Ares</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="vista1.html">Action</a></li>
+                  <li><a class="dropdown-item" href="vista2.html">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="vista3.html">Something else here</a></li>
+                </ul>
               </li>
             </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
           </div>
         </div>
       </nav>
     </header>
-    <div class="container my-5 bg-white">
+    <div class="container py-2 my-5 bg-white">
     <div class="row">
       <!-- <----Imagen de Zeus a la izquierda -->
       <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
@@ -61,12 +58,14 @@
           src="assets/img/Zeus_Galactico.png"
           class="img-fluid"
           alt="Zeus_Galactico"
-          
         />
     </div>
       <!-- <---Termina el div de la imagen de zeus -->
       <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 bg-white">
         <!-- <----Carta de la derecha -->
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Zeus - Dios del Rayo</h5>
+        </div>
         <div class="card border border-info bg-primary-subtle">
           <div class="card-body">
             <p class="text-start fst-italic">
@@ -77,20 +76,5 @@
         </div>
       </div>
     </div>
-    <!-- <----------CAJA DEL FOOTER -->
-    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 my-5 bg-white">
-     <footer class="col-sm-12 col-md-12 col-lg-12 col-xl-12 bg-white">
-      <div class="card">
-        <div class="card-header">
-          Featured
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        </div>
-      </div>
-     </footer>
-    </div> 
-    <!-- <----------FIN CAJA FOOTER -->
   </body>
 </html>
