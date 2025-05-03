@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/CSS/styles_santiago.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/CSS/styles_santiago.css"><!--Link del styles.CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"><!--Link de los estlos de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script> <!--Link de la parte de JS de Bootstrap para permitir dinamismo-->
+    <title>Dioses más populares del Olimpo</title>
 </head>
+
 <body class="bg-dark text-light">
+    <!--Parte del Header-->  
     <header class="border-bottom border-danger">
+      <!--Barra de navegación-->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
+              <!--Link que lleva al inicio-->
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a class="nav-link active text-light" aria-current="page" href="index.html">Inicio</a>
                 </li>
               </ul>
+              <!--Botón que aparece cuando la pantalla es más chica-->
               <button class="navbar-toggler bg-black border border-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon border border-warning"></span>
               </button>
+              <!--Parte del nav que contiene los links a las demás vistas-->
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
@@ -37,11 +43,13 @@
           </nav>
     </header>
     
+    <!--Parte del main-->
     <main class="container">
       <section><!--Seccion del main y donde va el carousel-->
         <h1 class="p-3 text-center ">Acá encontrarás información sobre algunos de los dioses griegos más populares</h1>
         <div id="carouselDioses" class="carousel slide">
           <div class="carousel-indicators">
+            <!--Sección de los botones que sirven para hacer pasar las imágenes del carousel-->
             <button type="button" data-bs-target="#carouselDioses" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselDioses" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselDioses" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -55,6 +63,7 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="assets/img/Imagen_zeus_sentado.jpg" class="img-fluid" alt="Imagen de Zeus sentado en un trono">
+                  <!--Botón que dirige a la vista correspondiente-->
                   <div class="carousel-caption d--block">
                     <h5>Zeus</h5>
                     <p>Dios del Trueno</p>
@@ -63,6 +72,7 @@
                 </div>
                 <div class="carousel-item">
                   <img src="assets/img/Imagen_poseidon_2.jpg" class="img-fluid" alt="Imagen de Poseidón en el océanos sosteniendo su tridente">
+                  <!--Botón que dirige a la vista correspondiente-->
                   <div class="carousel-caption d-block">
                     <h5>Poseidón</h5>
                     <p>Dios del Océano</p>
@@ -71,6 +81,7 @@
                 </div>
                 <div class="carousel-item">
                   <img src="assets/img/Imagen_ares.jpg" class="d-block w-100" alt="Imagen de Ares en el campo de batalla">
+                  <!--Botón que dirige a la vista correspondiente-->
                   <div class="carousel-caption d-block">
                     <h5>Ares</h5>
                     <p>Dios de la Guerra</p>
@@ -97,7 +108,9 @@
       </section>
 
       <section class="row d-flex justify-content-around mt-5 mb-5  text-center"><!--Seccion de las cartas con los datos de los desarrolladores-->
+        <h3 class="h3 text-primary">Desarrolladores</h3>
 
+        <!--Carta N1-->
         <article class=" border-top border-bottom border-danger col-12 col-sm-6 col-lg-4 mb-3" style="width: 18rem;">
           <img src="assets/img/Imagen_lucas.jpg" class="card-img-top rounded-circle" style="width: 150px; height: 150px; object-fit: cover;" alt="Imagen circular de uno de desarrollador en carta con Bootstrap">
           <div class="card-body">
@@ -105,6 +118,7 @@
           </div>
         </article>
 
+        <!--Carta N2-->
         <article class="border-top border-bottom border-danger col-12 col-sm-6 col-lg-4 mb-3" style="width: 18rem;">
           <img src="assets/img/Imagen_santi.jpg" class="card-img-top rounded-circle" style="width: 150px; height: 150px; object-fit: cover;" alt="Imagen circular de uno de desarrollador en carta con Bootstrap">
           <div class="card-body">
@@ -112,6 +126,7 @@
           </div>
         </article>
 
+        <!--Carta N3-->
         <article class="border-top border-bottom border-danger col-12 col-sm-6 col-lg-4 mb-3" style="width: 18rem;">
           <img src="assets/img/Imagen_leo.jpg" class="card-img-top rounded-circle" style="width: 150px; height: 150px; object-fit: cover;" alt="Imagen circular de uno de desarrollador en carta con Bootstrap">
           <div class="card-body">
@@ -121,14 +136,18 @@
       </section>
     </main>
 
+    <!--Parte del footer-->
     <footer class="container">
       <div class="justify-content-between row border-bottom border-top border-danger mb-4 p-3 mt-4 col-lg-12  col-sm-12 col-xsm-12 col-md-12 col-xl-12">
         <div class="col-auto">
           <h3 class="lead">Redes sociales</h3>
+
+          <!--Parte de los links a las diferentes redes sociales-->
           <a href="https://www.instagram.com/santi_ayala21/profilecard/?igsh=MTBwY2ZzNDhzZ254aA==" class="btn btn-link" target="_blank">IG_@santi_ayala21</a>
           <a href="https://www.instagram.com/luca.sz9946/profilecard/?igsh=MTBwY2ZzNDhzZ254aA==" class="btn btn-link" target="_blank">IG_@luca.sz9946</a>
           <a href="https://www.instagram.com/leonelga9/profilecard/?igsh=MTBwY2ZzNDhzZ254aA==" class="btn btn-link" target="_blank">IG_@leonelga9</a>
         </div>
+        <!--Link que lleva al usuario de vuelta ariba del todo de la página-->
         <div class="col-auto">
           <a href="#" class="btn btn-link">Volver arriba</a>
         </div>
