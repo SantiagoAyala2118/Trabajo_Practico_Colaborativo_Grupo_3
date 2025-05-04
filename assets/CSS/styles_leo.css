@@ -1,16 +1,9 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
 
+.body_visual2{
+    background: #7F7FD5;
+    background: -webkit-linear-gradient(to right, #A4C9BB, #00807A, #091C47);
+    background: linear-gradient(to right, #A4C9BB, #00807A, #091C47);
 }
-.body_visual1{
-    background: #7F7FD5; 
-    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  
-    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); 
-}
-
-
 /*Se copió y pegó un codigo para añadirle vida al hoover de los items en el header*/
 ul {
     list-style: none;
